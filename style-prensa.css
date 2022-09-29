@@ -1,0 +1,43 @@
+.grid-container{
+    display: grid;
+        grid-template: 
+        "navbar" 65px
+        "header" 100px
+        "sidebar"min-content
+        "main" min-content
+        "footer" 120px;
+        min-width: 350px;
+}
+html{
+    height: 100%;
+}
+body{
+    display: grid;
+    min-height: 100%;
+}
+.header__prensa{
+    grid-area: header;
+    background-color: aquamarine;
+}
+.sidebar__prensa{
+    grid-area: sidebar;
+    text-align: center;
+}
+
+.main__prensa{
+    grid-area: main;
+}
+
+.div__articulo{
+    position: absolute;
+    left: 100%;
+    transition: all 0.4s;
+    background-color: blueviolet;
+}
+
+.div__articulo-visible{
+    display: block;
+    position: relative;
+    left: 0%;
+    z-index: -1;
+}
